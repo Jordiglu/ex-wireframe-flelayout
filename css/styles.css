@@ -110,3 +110,34 @@
     height: 30px;
     flex-basis: 100%;
 }
+
+/* Responsive Media Query for Ipad device*/
+
+@media(max-width:768px) {
+    .main-container {
+        flex-wrap: wrap;
+    }
+    .article-container {
+        background-color: red;
+        width: 100%;
+    }
+    .aside-container {
+        width: 100%;
+    }
+}
+
+@media(max-width:360px) {
+    .main-container {
+        flex-wrap: wrap;
+    }
+    .article-container {
+        background-color: red;
+        width: 100%;
+    }
+    .aside-container {
+        width: 100%;
+    }
+    .article-content:last-child {
+        flex-grow: 1;
+    }
+}
