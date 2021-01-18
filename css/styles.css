@@ -1,3 +1,5 @@
+/*Header styles & Flex*/
+
 .header-container {
     background-color: cadetblue;
     border: 5px solid black;
@@ -7,7 +9,7 @@
     justify-content: space-around;
 }
 
-.child-container1 {
+.header-content:nth-child(2) {
     display: flex;
     border: 3px solid black;
     background-color: black;
@@ -17,7 +19,7 @@
     flex-grow: 1;
 }
 
-.child-container {
+.header-content {
     display: flex;
     border: 3px solid black;
     background-color: yellow;
@@ -25,6 +27,8 @@
     flex-basis: 100px;
     height: 30px;
 }
+
+/*Navbar styles & Flex*/
 
 .navbar-container {
     background-color: pink;
@@ -35,7 +39,7 @@
     justify-content: space-around;
 }
 
-.child-container2 {
+.navbar-content {
     display: flex;
     border: 3px solid black;
     background-color: red;
@@ -43,6 +47,8 @@
     height: 30px;
     flex-basis: 90%;
 }
+
+/* Main content, styles & Flex*/
 
 .main-container {
     display: flex;
@@ -92,6 +98,8 @@
     background-color: lightcoral;
 }
 
+/*Footer styles & Flex*/
+
 .footer-container {
     border: 3px solid black;
     background-color: black;
@@ -102,7 +110,7 @@
     justify-content: space-around;
 }
 
-.child-container5 {
+.footer-content {
     display: flex;
     border: 3px solid black;
     background-color: red;
@@ -121,10 +129,18 @@
         background-color: red;
         width: 100%;
     }
+    .article-content {
+        flex-grow: 1;
+    }
+    .article-content:last-child {
+        flex-grow: 1;
+    }
     .aside-container {
         width: 100%;
     }
 }
+
+/*Responsive Media Query for android device*/
 
 @media(max-width:360px) {
     .main-container {
