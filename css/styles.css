@@ -1,0 +1,112 @@
+.header-container {
+    background-color: cadetblue;
+    border: 5px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.child-container1 {
+    display: flex;
+    border: 3px solid black;
+    background-color: black;
+    margin: 10px;
+    height: 30px;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.child-container {
+    display: flex;
+    border: 3px solid black;
+    background-color: yellow;
+    margin: 10px;
+    flex-basis: 100px;
+    height: 30px;
+}
+
+.navbar-container {
+    background-color: pink;
+    border: 5px solid black;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.child-container2 {
+    display: flex;
+    border: 3px solid black;
+    background-color: red;
+    margin: 10px;
+    height: 30px;
+    flex-basis: 90%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-container {
+    background-color: blanchedalmond;
+    border: 5px solid black;
+    margin-top: 2em;
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.article-content {
+    display: flex;
+    border: 3px solid black;
+    background-color: yellow;
+    margin: 10px;
+    flex-basis: 40%;
+    height: 30px;
+}
+
+.article-content:last-child {
+    background-color: darkmagenta;
+}
+
+.aside-container {
+    background-color: cyan;
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    border: 4px solid black;
+    margin-top: 2em;
+}
+
+.aside-content {
+    border: 3px solid black;
+    background-color: yellow;
+    margin: 10px;
+    height: 30px;
+}
+
+.aside-content:last-child {
+    background-color: lightcoral;
+}
+
+.footer-container {
+    border: 3px solid black;
+    background-color: black;
+    border-bottom: 1px solid black;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.child-container5 {
+    display: flex;
+    border: 3px solid black;
+    background-color: red;
+    margin: 10px;
+    height: 30px;
+    flex-basis: 100%;
+}
