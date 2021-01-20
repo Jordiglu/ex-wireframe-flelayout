@@ -1,0 +1,144 @@
+body {
+    font-family: 'Cutive Mono', monospace;
+}
+
+/*Header, Nav styles & Flex*/
+
+.header-container {
+    background: no-repeat url("../img/capçalera.jpg");
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+}
+
+.logo {
+    padding-left: 3em;
+}
+
+.navbar-content {
+    padding-left: 0;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-content2 {
+    margin-top: 1em;
+    padding-left: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.nav-li {
+    display: flex;
+    padding-left: 2em;
+}
+
+.navbar-content li, .socials {
+    margin-top: 3em;
+    list-style-type: none;
+}
+
+.navbar-content a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 200px;
+    height: 150px;
+    margin-top: 0;
+    flex-direction: column;
+}
+
+.header-content i {
+    display: flex;
+}
+
+.header-phrase {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(248, 249, 250, 0.4);
+}
+
+.header-phrase span {
+    display: flex;
+    font-family: cursive;
+    font-size: 1.5em;
+    color: rgba(255, 99, 71, 0.4)
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.article-container {
+    background-color: rgba(249, 249, 250, 0.8);
+    margin-top: 1em;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.article-content1 img {
+    border: 1px transparent;
+    display: flex;
+    width: 450px;
+    margin: 10px;
+    height: 250px;
+    transition: 3s;
+}
+
+.article-content2 img {
+    border: 1px transparent;
+    display: flex;
+    margin: 10px;
+    width: 450px;
+    height: 250px;
+    transition: 3s;
+}
+
+.hover-img:hover {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.hover_img:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 3s;
+}
+
+/* Responsive Media Query for Ipad device*/
+
+@media(max-width:885px) {
+    .navbar-content2 {
+        display: flex;
+        padding: 0;
+    }
+    .nav-li {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+@media(max-width:768px) {
+    .header-container {
+        display: flex;
+    }
+    .main-container {
+        flex-wrap: wrap;
+    }
+}
